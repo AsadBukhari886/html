@@ -1,371 +1,339 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Html practice</title>
-    <!-- <meta http-equiv="refresh" content="30"> -->
-    <meta name="author" content="Asad Bukhari">
-    <meta name="keywords" content="blog, asad, articles, ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>HTML Practice</title>
+    <meta name="author" content="Asad Bukhari" />
+    <meta name="keywords" content="blog, asad, articles, " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        /* .article {
-            color: blue;
-        } */
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
     </style>
-</head>
-<!-- <script>
-    function clickit() {
-        alert("button clicked means javascript enable")
-    }
-</script> -->
-
-<body>
-
-
+  </head>
+  <body>
     <!-- header portion -->
     <header>
-        <h2>Header Tag</h2>
-        <p>Some Pre navigation content here</p>
+      <h2>Header Tag</h2>
+      <p>Some Pre navigation content here</p>
     </header>
 
     <!-- Navbar -->
     <nav class="nav">
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Article</a></li>
-            <li><a href="#">Contact</a></li>
-
-        </ul>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Article</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
-    <hr>
+    <hr />
 
     <!-- Main content -->
     <main>
-        <section>
-            <article class="introduction">
-                <h2>Main Content</h2>
-                <a href="https://www.w3schools.com" target="_top">click me to see content</a>
+      <section>
+        <article class="introduction">
+          <h2>Main Content</h2>
+          <a href="https://www.w3schools.com" target="_top">click me</a>
 
-                
-                <p>this is paragraph that is blocking element and this is showing </p>
-            </article>
-            <aside>
-                <h3>Aside content</h3>
-                <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
-            </aside>
-        </section>
-        <section>
-            <h2>Iframe</h2>
-            External Web page is embeded here
-            <iframe src="https://www.w3school.com" height="500px" width="100%" title="iframe with something"
-                lang="urdu">iframe
-                <a href="https://www.w3school.com" target="_parent">parent anchor</a>
-            </iframe>
-        </section>
+          <a href="second.html">second</a>
+          <p>this is paragraph that is blocking element and this is showing</p>
+        </article>
+        <aside>
+          <h3>Aside content</h3>
+          <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+        </aside>
+      </section>
+      <section>
+        <h2>Iframe</h2>
+        External Web page is embeded here
+        <iframe
+          src="https://www.w3school.com"
+          height="500px"
+          width="100%"
+          title="iframe with something"
+          lang="urdu"
+          >iframe
+          <a href="https://www.w3school.com" target="_parent">parent anchor</a>
+        </iframe>
+      </section>
     </main>
 
     <!-- Details -->
     <details>
-        <!-- <summary>Learn more</summary> -->
-        <pred>
-            <p>this is more <samp>details</samp> </p>
-        </pred>
+      <pred>
+        <p>this is more <samp>details</samp></p>
+      </pred>
     </details>
     <!-- Gallery -->
     <article>
-        <h2>Gallery</h2>
-        <figure>
-            <img src="baby_girl.avif" alt="baby_girl">
-            <figcaption>Figure 1.1 Baby Girl</figcaption>
-        </figure>
-        <figure>
-            <img src="girls_image.avif" alt="adventures_girl">
-            <figcaption>Figure 1.2 Adventures Girl</figcaption>
-        </figure>
+      <h2>Gallery</h2>
+      <figure>
+        <img src="baby_girl.avif" alt="baby_girl" />
+        <figcaption>Figure 1.1 Baby Girl</figcaption>
+      </figure>
+      <figure>
+        <img src="girls_image.avif" alt="adventures_girl" />
+        <figcaption>Figure 1.2 Adventures Girl</figcaption>
+      </figure>
     </article>
-    <hr>
+    <hr />
 
     <!-- Side bar which is looking awkward without css -->
     <aside>
-        <h2>Side bar</h2>
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-        </ul>
+      <h2>Side bar</h2>
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+      </ul>
     </aside>
-    <hr>
+    <hr />
     <!-- Tables -->
 
     <section>
-        <h2>Tables</h2>
-        <table id="table1">
-            <tr>
-                <th>title1</th>
-                <th>title2</th>
-                <th>title3</th>
-            </tr>
-            <tr>
-                <td id="nested">
-                    <table id="table2">
-                        <tr>
-                            <td>cell1</td>
-                            <td>cell2</td>
-                            <td>cell3</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>cell2</td>
-                <td>cell3</td>
-            </tr>
-            <tr>
-                <td>cell4</td>
-                <td>cell5</td>
-                <td>cell6</td>
-            </tr>
-        </table>
-    </section>
-    <br>
-    <section>
-        <table>
-            <thead>
-                <tr>
-                    <th>head 1</th>
-                    <th>head 2</th>
-                    <th>head 3</th>
-                    <th>head 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>body 1</td>
-                    <td>body 2</td>
-                    <td>body 3</td>
-                    <td>body 4</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>foot 1</td>
-                    <td>foot 2</td>
-                    <td>foot 3</td>
-                    <td>foot 4</td>
-                </tr>
-            </tfoot>
-
-            <!-- <tr>
-            <th>head 1</th>
-            <th>head 1</th>
-            <th>head 1</th>
+      <h2>Tables</h2>
+      <table id="table1">
+        <tr>
+          <th>title1</th>
+          <th>title2</th>
+          <th>title3</th>
         </tr>
         <tr>
-            <td>data 1</td>
-            <td>data 2</td>
-            <td>data 3</td>
+          <td id="nested">
+            <table id="table2">
+              <tr>
+                <td>cell1</td>
+                <td>cell2</td>
+                <td>cell3</td>
+              </tr>
+            </table>
+          </td>
+          <td>cell2</td>
+          <td>cell3</td>
         </tr>
+        <tr>
+          <td>cell4</td>
+          <td>cell5</td>
+          <td>cell6</td>
+        </tr>
+      </table>
+    </section>
+    <br />
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>head 1</th>
+            <th>head 2</th>
+            <th>head 3</th>
+            <th>head 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>body 1</td>
+            <td>body 2</td>
+            <td>body 3</td>
+            <td>body 4</td>
+          </tr>
+        </tbody>
         <tfoot>
+          <tr>
             <td>foot 1</td>
             <td>foot 2</td>
             <td>foot 3</td>
-        </tfoot> -->
-
-        </table>
+            <td>foot 4</td>
+          </tr>
+        </tfoot>
+      </table>
     </section>
-    <hr>
+    <hr />
 
     <!-- letter -->
 
     <section>
-        <h2>Letter</h2>
-        <article>
-            <h1>HTML Letter</h1>
+      <h2>Letter</h2>
+      <article>
+        <h1>HTML Letter</h1>
 
-            <p>
-                Dear <strong>Recipient</strong>,
-            </p>
+        <p>Dear <strong>Recipient</strong>,</p>
 
-            <p>
-                I hope this letter finds you well. I wanted to <em>emphasize</em> the importance of our recent
-                conversation and provide you with some <q>quotations</q> that I believe are relevant to our discussion.
-            </p>
+        <p>
+          I hope this letter finds you well. I wanted to <em>emphasize</em> the
+          importance of our recent conversation and provide you with some
+          <q>quotations</q> that I believe are relevant to our discussion.
+        </p>
 
-            <blockquote>
-                <p>
-                    "The only way to do great work is to love what you do." - Steve Jobs
-                </p>
-                <p>
-                    "Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston
-                    Churchill
-                </p>
-            </blockquote>
+        <blockquote>
+          <p>
+            "The only way to do great work is to love what you do." - Steve Jobs
+          </p>
+          <p>
+            "Success is not final, failure is not fatal: It is the courage to
+            continue that counts." - Winston Churchill
+          </p>
+        </blockquote>
 
-            <p>
-                As we were talking, it reminded me of an <abbr title="Internet Service Provider">ISP</abbr> I recently
-                came across. Their address is:
-            </p>
+        <p>
+          As we were talking, it reminded me of an
+          <abbr title="Internet Service Provider">ISP</abbr> I recently came
+          across. Their address is:
+        </p>
 
-            <address>
-                <p>
-                    XYZ Internet Services<br>
-                    123 Main Street<br>
-                    City, State, ZIP<br>
-                    Country
-                </p>
-            </address>
+        <address>
+          <p>
+            XYZ Internet Services<br />
+            123 Main Street<br />
+            City, State, ZIP<br />
+            Country
+          </p>
+        </address>
 
-            <p>
-                I also wanted to share a mathematical equation with you:
-                E = mc<sup>2</sup>
-            </p>
+        <p>
+          I also wanted to share a mathematical equation with you: E = mc<sup
+            >2</sup
+          >
+        </p>
 
-            <p>
-                Another important point to consider is the chemical formula for water:
-                H<sub>2</sub>O
-            </p>
+        <p>
+          Another important point to consider is the chemical formula for water:
+          H<sub>2</sub>O
+        </p>
 
-            <p>
-                Lastly, I'd like to remind you of the deadline for our next meeting, which is on:
-                <time datetime="2023-07-01">July 1, 2023</time>
-                at
-                <time datetime="10:00">10:00 AM</time>.
-            </p>
+        <p>
+          Lastly, I'd like to remind you of the deadline for our next meeting,
+          which is on:
+          <time datetime="2023-07-01">July 1, 2023</time>
+          at
+          <time datetime="10:00">10:00 AM</time>.
+        </p>
 
-            <p>
-                Thank you for your attention. I look forward to our future interactions.
-            </p>
+        <p>
+          Thank you for your attention. I look forward to our future
+          interactions.
+        </p>
 
-            <p>
-                Sincerely,<br>
-                Syed Asad Ali Naqvi
-            </p>
-        </article>
+        <p>
+          Sincerely,<br />
+          Syed Asad Ali Naqvi
+        </p>
+      </article>
     </section>
-    <hr>
-
-
+    <hr />
 
     <!-- Contact form -->
     <section>
-        <h2>Contact Form</h2>
-        <form action="">
-            <fieldset>
-                <legend>Send Message</legend>
-                <section>
-                    <label for="">First Name</label>
-                    <input type="text" placeholder="First Name" required><br>
-                    <label for="">Last Name</label>
-                    <input type="text" placeholder="Last Name" required><br>
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Email" required><br>
-                    <input type="button" value="Send">
-                </section>
-            </fieldset>
-        </form>
+      <h2>Contact Form</h2>
+      <form action="">
+        <fieldset>
+          <legend>Send Message</legend>
+          <section>
+            <label for="">First Name</label>
+            <input type="text" placeholder="First Name" required /><br />
+            <label for="">Last Name</label>
+            <input type="text" placeholder="Last Name" required /><br />
+            <label for="">Email</label>
+            <input type="email" placeholder="Email" required /><br />
+            <input type="button" value="Send" />
+          </section>
+        </fieldset>
+      </form>
     </section>
 
-
-
-
-    <!-- <p>ppppppppppppppppppppppppppppppppppppppp map<map></map>
-        pppppppppppppppppppppppppppppppppppppppppppppppppppppppp<sup class=""
-            style="color: red;">p</sup>pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-    </p> -->
-    <!-- <form>
-        <fieldset>
-            <legend>
-                Name
-            </legend>
-            <label>First Name</label>
-            <input />
-
-        </fieldset>
-    </form> -->
-
     <figure>
-        <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-            alt="image of girl" width="100%" height="100px" />
-        <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+      <img
+        src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+        alt="image of girl"
+        width="100%"
+        height="100px"
+      />
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
     </figure>
 
-    <button onclick=""> click me</button>
-    <hr>
-    <noscript>your browser doesn't support <button onclick="clickit"> click me</button>Javascript</noscript>
+    <button onclick="">click me</button>
+    <hr />
+    <noscript
+      >your browser doesn't support
+      <button onclick="clickit">click me</button>Javascript</noscript
+    >
 
-    <p>this book is <bdo>written</bdo> by <cite>Asad Naqvi sahab</cite> writer</p>
+    <p>
+      this book is <bdo>written</bdo> by <cite>Asad Naqvi sahab</cite> writer
+    </p>
     <p>Here is a quote from WWF's website:</p>
-    <blockquote cite="www.w3school.com">
-        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation
-        organization,
-        WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop
-        and
-        deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-        <!-- </ style="color: SlateBlue;"> -->
-    </blockquote>
-    <figure>
-        <img src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
-            alt="girl image" usemap="#girlmap">
-        <map name="girlmap">
-            <area shape="" coords="" href="" alt="">
-        </map>
-    </figure>
-    <p>picture</p>
-    <picture>
-        <source media="(min-width: 650px)"
-            srcset="data:image/jpeg;base64,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">
-        <img
-            src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80">
 
+    <blockquote cite="www.w3school.com">
+      For 60 years, WWF has worked to help people and nature thrive. As the
+      world's leading conservation organization, WWF works in nearly 100
+      countries. At every level, we collaborate with people around the world to
+      develop and deliver innovative solutions that protect communities,
+      wildlife, and the places in which they live.
+      <!-- </ style="color: SlateBlue;"> -->
+    </blockquote>
+
+    <figure>
+      <img
+        src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+        alt="girl image"
+        usemap="#girlmap"
+      />
+      <map name="girlmap">
+        <area shape="" coords="" href="" alt="" />
+      </map>
+    </figure>
+
+    <p>picture</p>
+
+    <picture>
+      <source
+        media="(min-width: 650px)"
+        srcset="
+          data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIoAhAMBIgACEQEDEQH/xAAcAAACAwADAQAAAAAAAAAAAAAFBgMEBwABAgj/xAA5EAABAwMDAgQEBAUDBQEAAAABAgMEAAURBiExEkETIlFhFHGBkQcjMkKhscHR4RWCsjRyc5LwFv/EABoBAAMBAQEBAAAAAAAAAAAAAAMEBQIBBgD/xAAnEQACAgEEAgICAgMAAAAAAAABAgADEQQSITFBURMiBTJhsRUjof/aAAwDAQACEQMRAD8Az2wS12m3OOtEeI5sKcrbq632jTxS6VGW4OrGMnqNZ6hQZA6l56eBiqMl1TzpJ+1SLdFXqT9/eYtX9WLeZblSTPluPOb9aid+1Pn4T2w3J+WgKKIrQ82/61Ht9qz2CyqRIbYT+48+laU3Ob0lbG0249bxPnA26jWda4VBUoyT4h6jhtxgrVabTa5sqIInU4lR6VKTsr3BoDFdVKSGm3DsM4AondY72ogmZNdSwhOcAHc0HipZti3VMKKzjp2VmuUgfHjP2mydxyYetza21KIRnwx1YVtmhVvmpOphIk4AQdvShIvU51wMtknJwMjenzTOn0W+D8fdI/jFe+Ojqrr1/ECX7PE2tak/WNVutrd0jtzmnGl/HdXhqByltKAE75x5goK9aaLhZY1xjuNuNoUVZ83Tvk96VbK4YWmX7i90toQ4vw0ggdPiOFX0ISoCr1o1RHWAFvpOO+eKV/IX2UFAgyAJRoXK4mdaisEqzyleCj9B/UKXpN3D7iWZSQMHcmtrvV/sEwNx3Ftqcz6jisv17YorSfi4RCkK9O1UNPaGA39mTrF2sRK7+nkzbYqXBX1KQMlIpetzrDb/AESCRvgnNHtPXhxFtcj9eCAaC222m43JxA3V18AUwvkNB+Z4kWptalfDLCvTBq7p+AtEkpkJWhs/uFS320TLGtpw/oO4z2o5Du8R63eJ0jxAMKFcYsVxPs8z3Jt7KXAEtlwY2VjmuUPTfxjbpwDgZrukPhsncCKxkIWPMCCO1RJUlavJ8qrOlQJChg+lRpUUnINVhXxxBtWPEPx+u2LS+SkqPGDxT9oyxf6/bX50tZypZSjPoO9Ze0VPIKnV7AbCm+PrxVuszcG3p6FJR05P86ma+i50Ap/bPfoQaggwJqKHNhTnY65BU0lZA6dtqs6bhCasx4zZWtQwT6UHmXB+4O5ecK1K9a0H8O2UW538wAKUARmt6p3o02T+0Of4liBpCLbHEPSVJLv6t+5p6loTcbM1b20hDsk+EnbOM8q+gyfpVG8sp8VD6zkZyBRGyyI7kJh/IbkKLjaWyrKkAHY4/aSOkkHcbUro2N1YtsMOp4zF/VkKG7pedarHIZbdiPJW+gblfRzk+vm4NKdo07cUNkl1SSqmjT0pmFrG92qXDccbk9GFtoTgAtJBzxucZz996gZvTcZp1iYel6OstuZ5BBxTGoLMODNWnG1hEK+aYnRCqUhaiAeaEf6pMfZ+FccUQNqe7pqphyMptCx/cVn0haRMU8wMJKs4HataR7HXFo5HUXcr2sKWm0TIzHjuIw2sZB9q7sMp2FPelRm1FYVyO1Fxq5p2zfCKbT1JGBtxtVfSU2AyVCcPlW2dyrFhOoATBWqNRSLu6EyCSUbbjAr3pBtEuUY7hwT2NT39NrWp5yKMEHIwKh0pDS5dGXErKcK7UUOpq6xOMOZNfdNSIdxW21hSCOpJrlam7bX3SlXSFeUb1yuiwz7AmEFBkysApHUrGVHAHzPajv8A+HvZUkNMMvZIThp9J3OPfPBB+W/FQxYSHxlSMJPcV5lxJcJt0RHnEtPABxKFEdeOM+tEFwztBxBLcrHmSO2C4stONKtU7xm9lDwFH7bb/Mbb0ONiu4ShX+mTCHBlPSwo5GcdhU6NQ3xhC2/j3yFgJPiHrIA4AKs4HsKrLvFzfBS7cJSgT1HLp3OMf0FFUEQv18QlA03cwUyJbCILSFJBXOcDA83BwrfHuAafLI1bjcn7O86Z11Q2VsGIs+EFDHkKvXfc4wKzGJIuMmQIkV+QtcghvoDh8+TsDvxW46B05EssLclyWs5ef6iCojsD6e1LalkUZeHoqNh4EM23ScmSy2q8XBSSW8KZj4IScYPmUP6Ci9p0Tp+2LUuNFd8RR6lLXIWok+vNXGHjwKusKOB1cjnFLpagG0DiGerEhYsFqYdU83DQHVjCnckrI91c0C1H+Hltv0pyWZD8WQ4gIUWwkpVjO5GMk7457Cm1KxipAaMAh5gGzjBnzpqv8IdQ2pC5EFSLpHSCT8OkpcA/8e+foT8qQmm3Y6il1tQPG4xX2T3pO1voaDfWnJcdhtE/kkbB3Hr7+h+9FLkLBFPU+c4tsdkvZaQSD6CuXGAYxw51A0+6XSxb7k9EfbwsK6cKG6SOQai1lZFzXwtjCUjvik01LNbg9QOcGZkpwjYE4+dXLLcFQZ7bwUQAdxnmi8fSbry1BToTjuoV5e0x4SyhThChx6U4bqiMEwgUzYrHqKK9bWlqcGcetdVkkePcYTfgtvEpByN65Sh2+GmufU5DkFlASpPHY17Wpbyj4SSfbFSWxcWepIUoIz6086ftkBlOym1qPcmlNTqFoySOZJsYr2IitwSXE/ExlBJ5IFWLpo7xIapUE9W2dv7VpkuLERgrDYHrkVyNKtcUHxXkdBGFAkVP/wArbw1YnK7n3DEzn8MrRhyXcpCMKa/JZBH7iPMfoMD6mtdgABlJAwCOKXktRmWMRAEtOKLgUP3dW+aMW538lIB3xQ9Zrmts3+J7TSVbaR7MOMu8+21XGHcnPH9aDMueXIJz6VeYcGwNZp1ZJGTOW1wyHMAV2leTvzVRDmRUqCTjan01WWxESmJdSs131ZqAKx8q7SvJ96ordBFYkfiBZWYkhOo2Wd04RLA9OEr+fAPtj0rKdSaxKlluPhVfRcyOzNiPRpCQtl5BQtJ7gjBr5iuOlHbbeZkB/rUth5SAo/uT+1X1GD9a2Er3bmgXX1BSdQzQvZex7CiEu4zVxvGUogEcAcVK1pV0upITtmnSHZYCYaW5CklZ7Z2r616hgqIPBmdR5V0db6m21rTnnFcrZLbYbemKAlKOTxiuUqdUM8ViamDNrWhQS2sp981Om6z4zuWpKwR71BEWhLqlLGdth71C6epwn1NWCoY4YQWB0YVk6muklAS5JVgelDly5LufEfcP+6vPhY5P2r1FaDslCD3ri11oPqBPtqjxNtjEptkQDgMI/wCIq3apO6kqOCNx71QtrgfsUF1JBwylKv8AuAwf4iuNflr54rxVi5LA+zPR02dRsacGBtvmrbTg6s96FQ3kusBQOQDgetEWikgVNZmTiMWAQo05kAVbaJyPlQ1pQ2zzV1pWWxvTOiuPRk+xZaUsgH512yQVc81Cckc1K2QANhVtLouRgSyDtWafibHbh3OPOOEiS0UqOO6P8KH2rSQc8cUs/iBAam2ZouDPhvD+II/tTtTFxiLv+syCbqFDbZRH54Jrxp+Jcb3MStSlIazz3NFImkmESSrcoP7TT5YrSmGyFIQBjtRuBwoi2fJhW1WxuLCQ0rcjua5S9dNSfCyy0V4wOK5Xdq+pndPnYgiuwkneil5+EceCoBy164ofkjsKoq+4ZxOg5ntk9TiQs7HarbkZSCXGwBihylYojCePhnxQVAcGsOCORM4zHz8N7gX4L9tePnZV4iM90q5+x/5UyvI8xxzWcadffiXNmcwkkIOFgfuSeR/97VqLnQpAWhQU2oApI9K8x+Sr+O/eOm/uWNG+5dp7EqwZRZWQSQOflR+FMS5gA5Pr60ruo3O+Kltjqm3cZ4OQRU+2lXXMoKx6jw0vODVlpZzQyO91DCc7jvzV9tXfipXNbZmbFlxLmCDVhtzbmqAVk7dqmbUf8U0uqYdRVkhFCtqX/wAQXizpWS6nlLjWP/cUbZ35oJrpkzLAuMk4LjzY+ys/0r0Oms3LkROwcGIcG6J6Qp3bA4o/G1XEajqT1Ake9JGpIK7VF6+r570iyHpnmU2+Qk84qhT9+pPY88wrqq+fF3l11kkJO2xrlKi0uKUSrJPrXVUBUuJ3iSNnCcGunOntUanM10hK3FBKQST2FEx5nxkkboU8kLxj3pqusSHHtqfAOVAc0HcsT7MRL6xurcDFDy+9jw1LJA9TQGAtIKt1PgYxaYeWFYKSQfStA05KU5FciPAhbBynq7oP9jt9qEaDtbTqGXl4ORgjFNd2hJgupmNgJCNlkd0nn+/0qVrkNu4CMaezY4MryEenpVBKuh/OM4FEndxkHOeDVApT4nnJx3APao1fWDLvEZLe8CEqT6b+ai7Lm2c0v21zA6FDB9x/OjCFDNTL0+0OwyJcSs5zjarTb223NUEqG+9TNHelTwcxd0zCjDmEUr64vrVv+FbWsAkqcO/AGw/mftR8OnoAG1fP/wCJd1Vc9RSHkO5ZR+SykK/ak8/U5P2r034hflwmeBJ2pwi5lvVGq2bqhTLA37qPFKDcopcOP05qjg58xo/arciU2ElQz2r0ZSulZLYbpXCmV+bOM9q5RlOkZChkJOPau6F81fuY+MxRlR/AUB1dVGtIx2XZqC7jnvQbzyE5USTnvXcSU7Ceyg4NNWqz1lc8wnfE1vVAhN2hIRjqCcAA1kiygPLJPfarUu8yZKekqIof4Tih1dJx60vo9MaFIY9zirHjSOqW7ajw14x70duOrhLaXhwFB/Z61k/B3q5AlpYP5gJ9MVt9KM7hNdTWtPXNq4R/hwcOtJykHun/ABU8rZZ29eKyRm8yo1wbmxVltxo+TuMdwfnWkWPUcG+shPWGZmPMwo4z7pPf+dRtZoHqPyKOD/yV9HqQy7H7hu2SUdQQeRxvuaY2V44/jSa80pte3rncUUiXYpwFg5A3JHNR9RTv5WU1bjBjKF4OcVM0cb0GRdoowVuhI7+1BrzrlmOksWpPjyTsHFJ8iPf3pSvR22ttUQV9iVrkmGdX3kRYxt0ZZ+LkJ36eW0Hv8zx/GsuuGk5S+uSGsNpHaoZTl0blqnu9bjij1KUrlRqd3XUoRvh1s9O2Ca9No9I+mULUc+5563UC18mJUtvwX1I9K0DQFp+K6HFpJA9aSnEmfJU9wSc1pmgJjUWOG+odY9aqahgUCmYXaY7tQUoQE4ArlD5V1Bd/V2rlL/Gs3mfPjbimz5TzXSsqUT610Oak7VVgzxGPTlojyyjxyBmpL+YkEKYZwop2GKH25xaWj0rUPkaFzVKU8epRPzNKCsvbkmaB4kJOST61xOMjq4qWMAXNx2qN3Zw05/EzLJW1jCcfavKU5HUn6YqtTFaUIUhHUhJ+YoNjfGMzLnAzIouoL1FSEIlrWnsHh14+p3o7b7/Mktn4t1tOOOhsCupzDIYyGkD/AGilyWSGxg427UnsruH6gTqaq3rMLzdQfnhJ61pHbOxqkbq4pSnSjHpigRP5goin/pzRzQigYE2WJOTGNrUSpaEtOoTjjGKldtkeagkJCT8qX4AHjjamaIT4hGTjFIXIKj/r4ilo2nIgaRY3I+VNKP8ASqzMiZBdyMnHpTO8T4mM7Y4obIA32FaruZhhuZlWJkYvzpA6ioH0rlRKSnP6R9q7om1PU1ub3P/Z
+        "
+      />
+      <img
+        src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      />
     </picture>
     <pred>
-        <p>this is more <samp>details</samp> </p>
+      <p>this is more <samp>details</samp></p>
     </pred>
 
     <section>
-        <article class="articled">
-            <h2>this is article 1</h2>
-            <p>this is paragraph 1</p>
-        </article>
-        <!-- <article class="article">
+      <article class="articled">
+        <h2>this is article 1</h2>
+        <p>this is paragraph 1</p>
+      </article>
+      <!-- <article class="article">
             <h2>this is article 2</h2>
             <p>this is paragraph 2</p>
         </article> -->
     </section>
 
-
-
-
-
-
     <!-- Footer -->
     <footer>
-        <h2>Footer</h2>
-        <section>
-            <h4>Links</h4>
-            <ul>
-                <li><a href="#">company</a></li>
-                <li><a href="#">email</a></li>
-                <li><a href="#">phone</a></li>
-                <li><a href="#">address</a></li>
-            </ul>
-        </section>
+      <h2>Footer</h2>
+      <section>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">company</a></li>
+          <li><a href="#">email</a></li>
+          <li><a href="#">phone</a></li>
+          <li><a href="#">address</a></li>
+        </ul>
+      </section>
 
-        <p>Lot of footer content here</p>
-        <mark>this is mark</mark> &copy &reg Copywrite by nobody <span>&#128516</span>
-        <time> &lt &#60 </time>
-        <hr>
+      <p>Lot of footer content here</p>
+      &copy; &reg; <mark>Copywrite by Nobody</mark>
+      <span>&#128516;</span>
+      <hr />
     </footer>
-
-</body>
-
+  </body>
 </html>
