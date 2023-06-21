@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>HTML Practice</title>
+    <link rel="icon" href="girls_image.avif" />
     <meta name="author" content="Asad Bukhari" />
     <meta name="keywords" content="blog, asad, articles, " />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,18 +27,18 @@
     <nav class="nav">
       <h2>Navigation</h2>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Article</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#iframe">About</a></li>
+        <li><a href="#gallery">Article</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <hr />
 
     <!-- Main content -->
     <main>
-      <section>
-        <article class="introduction">
+      <section class="intro">
+        <article class="introduction" id="home">
           <h2>Main Content</h2>
           <a href="https://www.w3schools.com" target="_top">click me</a>
           <p>this is paragraph that is blocking element and this is showing</p>
@@ -47,7 +48,7 @@
           <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
         </aside>
       </section>
-      <section>
+      <section class="iframe" id="iframe">
         <h2>Iframe</h2>
         External Web page is embeded here
         <iframe
@@ -55,21 +56,37 @@
           height="500px"
           width="100%"
           title="iframe with something"
-          lang="urdu"
+          lang="en"
+          name="w3school"
           >iframe
           <a href="https://www.w3school.com" target="_parent">parent anchor</a>
         </iframe>
       </section>
-    </main>
+      <!-- Details -->
+      <details>
+        <summary>description</summary>
+        <pre>
+        <p>there is more <samp>details</samp></p>
+      </pre>
+      </details>
+      <a href="https://www.w3school.com" target="w3school">Iframe link</a>
+      <!-- rough -->
+      <section class="rough">
+        <strong>this is strong tag</strong><br />
+        <b>this is strong tag</b>
+        <h2>Description List</h2>
 
-    <!-- Details -->
-    <details>
-      <pred>
-        <p>this is more <samp>details</samp></p>
-      </pred>
-    </details>
+        <dl>
+          <dt>asad</dt>
+          <dd>Most intelligent of four brothers</dd>
+          <dt>Hamid</dt>
+          <dd>Eldest of four brothers</dd>
+        </dl>
+        <p>this is <cite>Cited content</cite> <i>Cited content</i></p>
+      </section>
+    </main>
     <!-- Gallery -->
-    <article>
+    <article id="gallery">
       <h2>Gallery</h2>
       <figure>
         <img src="baby_girl.avif" alt="baby_girl" />
@@ -124,7 +141,8 @@
       </table>
     </section>
     <br />
-    <section>
+    <section class="no-collapse-table">
+      <h2>No Collapse Table</h2>
       <table>
         <thead>
           <tr>
@@ -150,6 +168,27 @@
             <td>foot 4</td>
           </tr>
         </tfoot>
+      </table>
+    </section>
+    <br />
+    <section class="veritical-table-header">
+      <h2>Vertical Header</h2>
+      <table>
+        <tr>
+          <th>Firstname</th>
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Lastname</th>
+          <td>Smith</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th>
+          <td>50</td>
+          <td>94</td>
+        </tr>
       </table>
     </section>
     <hr />
@@ -227,7 +266,7 @@
     <hr />
 
     <!-- Contact form -->
-    <section>
+    <section id="contact">
       <h2>Contact Form</h2>
       <form action="">
         <fieldset>
@@ -239,9 +278,34 @@
             <input type="text" placeholder="Last Name" required /><br />
             <label for="">Email</label>
             <input type="email" placeholder="Email" required /><br />
-            <input type="button" value="Send" />
+            <input type="submit" value="Send" />
           </section>
         </fieldset>
+
+        <section>
+          <h2>Search Cars with datalist</h2>
+          <input name="car-list" list="car-list" />
+          <datalist id="car-list">
+            <option>civic</option>
+            <option>maroti 800</option>
+            <option>lambergini</option>
+            <option>ferrari</option>
+          </datalist>
+        </section>
+        <h2>URL</h2>
+        <input type="url" placeholder="add url" />
+        <section>
+          <h2>Range Input</h2>
+          <input type="range" name="" id="" value="25" />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value="John"
+            readonly
+            disabled
+          /><br />
+        </section>
       </form>
     </section>
 
@@ -299,9 +363,9 @@
         src="https://images.unsplash.com/photo-1682685797406-97f364419b4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
       />
     </picture>
-    <pred>
+    <pre>
       <p>this is more <samp>details</samp></p>
-    </pred>
+    </pre>
 
     <section>
       <article class="articled">
